@@ -17,11 +17,9 @@ h1 {
 body{
     background: 
       url("background.png");     
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-       background-size: cover;
- }
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
  /* Add a black background color to the top navigation bar */
 .topnav {
@@ -48,7 +46,7 @@ body{
   
   /* Style the "active" element to highlight the current page */
   .topnav a.active {
-    background-color: #2196F3;
+    background-color: #00f30c;
     color: white;
   }
   
