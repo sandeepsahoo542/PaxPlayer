@@ -3,8 +3,6 @@ hi
 hello
 yesssssss?? howdy
 i am sleepy
-
-fgihsbg
 hungry
 happy
 
