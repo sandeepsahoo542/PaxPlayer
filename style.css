@@ -9,14 +9,14 @@
 }
 
 h1 {
-    text-align: left;
-    font-family: 'batangasbold', Arial, sans-serif;  
+    text-align: center;
+    font-family: 'batangasbold', Arial, sans-serif;
 }
 
 
 body{
-    background: 
-      url("background.png");     
+    background:
+      url("background.png");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -26,7 +26,7 @@ body{
     overflow: hidden;
     background-color: #e9e9e9;
   }
-  
+
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
@@ -37,19 +37,19 @@ body{
     text-decoration: none;
     font-size: 17px;
   }
-  
+
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
     color: black;
   }
-  
+
   /* Style the "active" element to highlight the current page */
   .topnav a.active {
     background-color: #00f30c;
     color: white;
   }
-  
+
   /* Style the search box inside the navigation bar */
   .topnav input[type=text] {
     float: right;
@@ -59,7 +59,7 @@ body{
     margin-right: 16px;
     font-size: 17px;
   }
-  
+
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
   @media screen and (max-width: 600px) {
     .topnav a, .topnav input[type=text] {
