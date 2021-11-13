@@ -28,7 +28,7 @@
 
 .full-chat-block {
     width: 350px;
-    background: white;
+    background-image: url("bg.jfif");
     text-align: center;
     overflow: auto;
     scrollbar-width: none;
@@ -132,7 +132,7 @@
 .botText span {
     line-height: 1.5em;
     display: inline-block;
-    background: #e0e0e0;
+    background: #81eb87;
     padding: 10px;
     border-radius: 8px;
     border-bottom-left-radius: 2px;
