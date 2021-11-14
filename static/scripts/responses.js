@@ -54,6 +54,11 @@ function getBotResponse(input) {
     } else if(input == "Which celeb is your crush?") {
         return "Awww cutie!!";
     } else {
+    }
+            else if(input == "Can you tell me the cause of mental illnes?"){
+            return "Well, I can give a best answer of this and I found this, It is may be because of your Gene or Family History, Stress, History of abuse. ";
+    } else if(input == "Are you feeling bored or mentally ill"){
+            return "Yes";
+}      else if (input == " ")
         return "Try asking something else!";
     }
-}
