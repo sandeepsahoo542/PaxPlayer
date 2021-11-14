@@ -15,7 +15,10 @@ function getBotResponse(input) {
         return "Talk to you later!";
     } else if(input == "i am bored") {
         return "well fuck u";
-    } else {
+    }
+            else if(input == "Can you tell me the cause of mental illnes?"){
+            return "Well, I can give a best answer of this and I found this, It is may be because of your Gene or Family History, Stress, History of abuse. ";
+    } else if(input == "") 
         return "Try asking something else!";
     }
 }
