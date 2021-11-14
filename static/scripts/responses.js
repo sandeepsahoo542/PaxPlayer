@@ -13,6 +13,8 @@ function getBotResponse(input) {
         return "Hello there!";
     } else if (input == "goodbye") {
         return "Talk to you later!";
+    } else if(input == "i am bored") {
+        return "well fuck u";
     } else {
         return "Try asking something else!";
     }
