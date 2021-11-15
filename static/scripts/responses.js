@@ -1,5 +1,5 @@
 function getBotResponse(input) {
-    //rock paper scissors
+    //rock paper scissors game
     if (input == "rock") {
         return "paper";
     } else if (input == "paper") {
@@ -22,7 +22,7 @@ function getBotResponse(input) {
     } else if(input == "Yes I am feeling little low") {
         return "Would you like to listen to some music?";
     } else if(input == "Yes") {
-       //Music ides insertion//
+       //Music ideas insertion
         return "";
     } else if(input == "Great collection") {
         return "What are your hobbies?";
