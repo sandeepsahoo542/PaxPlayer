@@ -33,12 +33,12 @@ function getBotResponse(input) {
     } else if(input == "Movies") {
         return "What is your favourite movie during the pandemic?";
     } else if(input == "Cars 2") {
-        return "S";
-    } else if(input == "") {
-        return "";
-    } else if(input == "") {
-        return "";
-    } else if(input == "") {
+        return "That's really a cool movie.";
+    } else if(input == "Exactly") {
+        return "What profession do you pursuing these days?";
+    } else if(input == "Well, I am Student pursuing Bachlor of technology") {
+        return "How often do you miss your classroom study in this pandemic?";
+    } else if(input == "I really missed it so much") {
         return "";
         
     }else if(input == "Can you tell me the cause of mental illnes?"){
