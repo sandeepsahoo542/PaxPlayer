@@ -40,10 +40,6 @@ function getBotResponse(input) {
         return "How often do you miss your classroom study in this pandemic?";
     } else if(input == "I really missed it so much") {
         return "";
-        
-    }else if(input == "Can you tell me the cause of mental illnes?"){
-            return "Well, I can give a best answer of this and I found this", It is may be because of your Gene or Family History, Stress, History of abuse. ";
-        return "Hello there!";
     } else if (input == "goodbye") {
         return "Talk to you later!";
     } else if(input == "i am bored") {
