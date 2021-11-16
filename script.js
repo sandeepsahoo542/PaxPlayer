@@ -1,3 +1,105 @@
+const songArray = [
+  [
+    {
+      songName: "Enemy",
+      songCreator: "Imagine Dragons",
+      songUrl: "./media/songs/genre1/Enemy.mp3",
+      songCoverUrl: "./media/songCover/genre1/Enemy.jpg",
+      duration: "3:33"
+    },
+    {
+      songName: "Follow You",
+      songCreator: "Imagine Dragons",
+      songUrl: "./media/songs/genre1/FollowYou.mp3",
+      songCoverUrl: "./media/songCover/genre1/FollowYou.jpg",
+      duration: "2:56"
+    },
+    {
+      songName: "Natural",
+      songCreator: "Imagine Dragons",
+      songUrl: "./media/songs/genre1/Natural.mp3",
+      songCoverUrl: "./media/songCover/genre1/Natural.jpg",
+      duration: "3:09"
+    }
+  ],
+  [
+    {
+      songName: "Butter",
+      songCreator: "BTS",
+      songUrl: "./media/songs/genre2/butter.mp3",
+      songCoverUrl: "./media/songCover/genre2/butter.png",
+      duration: "3:02"
+    },
+    {
+      songName: "Harleys In Hawaii",
+      songCreator: "Katy Perry",
+      songUrl: "./media/songs/genre2/harley.mp3",
+      songCoverUrl: "./media/songCover/genre2/harley.jpg",
+      duration: "3:14"
+    },
+    {
+      songName: "Sucker",
+      songCreator: "Jonas Brothers",
+      songUrl: "./media/songs/genre2/sucker.mp3",
+      songCoverUrl: "./media/songCover/genre2/sucker.jpg",
+      duration: "3:19"
+    }
+  ],
+  [
+    {
+      songName: "ILY",
+      songCreator: "Surf Mesa",
+      songUrl: "./media/songs/genre3/ily.mp3",
+      songCoverUrl: "./media/songCover/genre3/ily.jpg",
+      duration: "2:57"
+    },
+    {
+      songName: "Photograph",
+      songCreator: "Ed Sheeran",
+      songUrl: "./media/songs/genre3/photograph.mp3",
+      songCoverUrl: "./media/songCover/genre3/photograph.jpg",
+      duration: "4:34"
+    },
+    {
+      songName: "Sunflower",
+      songCreator: "Post Malone",
+      songUrl: "./media/songs/genre3/sunflower.mp3",
+      songCoverUrl: "./media/songCover/genre3/sunflower.jpg",
+      duration: "2:41"
+    }
+  ],
+  [
+    {
+      songName: "Green Chair",
+      songCreator: "Diego Nava",
+      songUrl: "./media/songs/genre4/music1.mp3",
+      songCoverUrl: "./media/songCover/genre4/cover1.jpg",
+      duration: "1:33"
+    },
+    {
+      songName: "Dance with Me",
+      songCreator: "Ahjay Stelino",
+      songUrl: "./media/songs/genre4/music2.mp3",
+      songCoverUrl: "./media/songCover/genre4/cover2.jpg",
+      duration: "2:22"
+    },
+    {
+      songName: "Gimme that Bottle",
+      songCreator: "Michael Ramir",
+      songUrl: "./media/songs/genre4/music3.mp3",
+      songCoverUrl: "./media/songCover/genre4/cover3.jpg",
+      duration: "1:54"
+    },
+    {
+      songName: "Slow strings",
+      songCreator: "Rishav Pal",
+      songUrl: "./media/songs/genre4/music4.mp3",
+      songCoverUrl: "./media/songCover/genre4/cover4.jpg",
+      duration: "4:12"
+    }
+  ]
+];
+
 const cover = document.getElementById('cover');
 const disc = document.getElementById('disc');
 const title = document.getElementById('title');
@@ -6,166 +108,39 @@ const progressContainer = document.getElementById('progress-container');
 const progress = document.getElementById('progress');
 const timer = document.getElementById('timer');
 const duration = document.getElementById('duration');
-const prev = document.getElementById('prev');
+const prev = document.getElementById('prevSong');
 const play = document.getElementById('play');
-const next = document.getElementById('next');
-let songIndex = 0;
-
-// Songs info
-const songs = [
-  {
-    title: 'Green Chair',
-    artist: 'Diego Nava',
-    coverPath: 'assets/images/cover1.jpg',
-    discPath: 'assets/music/music1.mp3',
-    duration: '1:33',
-  },
-  {
-    title: 'Dance with Me',
-    artist: 'Ahjay Stelino',
-    coverPath: 'assets/images/cover2.jpg',
-    discPath: 'assets/music/music2.mp3',
-    duration: '2:22',
-  },
-  {
-    title: 'Gimme that Bottle',
-    artist: 'Michael Ramir',
-    coverPath: 'assets/images/cover3.jpg',
-    discPath: 'assets/music/music3.mp3',
-    duration: '1:54',
-  },
-  {
-    title: 'Slow strings',
-    artist: 'Rishav Pal',
-    coverPath: 'assets/images/cover4.jpg',
-    discPath: 'assets/music/music4.mp3',
-    duration: '4:12',
-  },
-  {
-    title: 'Brown munde',
-    artist: 'Rishav Pal',
-    coverPath: 'assets/images/cover4.jpg',
-    discPath: 'assets/music/music5.mp3',
-    duration: '5:15',
-  },
-  {
-    title: 'Succession',
-    artist: 'Rishav Pal',
-    coverPath: 'assets/images/cover4.jpg',
-    discPath: 'assets/music/music6.mp3',
-    duration: '5:26',
-  },
-  {
-    title: 'After the rain',
-    artist: 'Big rice piano',
-    coverPath: 'assets/images/cover5.jpeg',
-    discPath: 'assets/music/music7.mp3',
-    duration: '4:15',
-  },
-  {
-    title: 'after the rice cake',
-    artist: 'John Meyer',
-    coverPath: 'assets/images/cover6.jpeg',
-    discPath: 'assets/music/music8.mp3',
-    duration: '4:07',
-  },
-  {
-    title: 'Interstellar',
-    artist: 'Hans Zimmer',
-    coverPath: 'assets/images/cover7.jpeg',
-    discPath: 'assets/music/music9.mp3',
-    duration: '5:47',
-  },
-  {
-    title: 'Fireflies',
-    artist: 'Sandeep maheswari',
-    coverPath: 'assets/images/cover8.jpeg',
-    discPath: 'assets/music/music10.mp3',
-    duration: '4:46',
-  },
-  {
-    title: 'Unravel',
-    artist: 'Linked Horizon',
-    coverPath: 'assets/images/cover9.jpeg',
-    discPath: 'assets/music/music11.mp3',
-    duration: '4:11',
-  },
-  {
-    title: 'Bella Ciao',
-    artist: 'Artev uzunov',
-    coverPath: 'assets/images/cover10.jpeg',
-    discPath: 'assets/music/music12.mp3',
-    duration: '2:03',
-  },
-  {
-    title: 'Machi no dorufin',
-    artist: 'Kingo Hamada',
-    coverPath: 'assets/images/cover4.jpg',
-    discPath: 'assets/music/music13.mp3',
-    duration: '3:25',
-  },
-  {
-    title: 'Solo',
-    artist: 'Fitgirl',
-    coverPath: 'assets/images/cover4.jpg',
-    discPath: 'assets/music/music14.mp3',
-    duration: '3:48',
-  },
-  {
-    title: 'Guren no Yumiya',
-    artist: 'Linked horizon',
-    coverPath: 'assets/images/cover4.jpg',
-    discPath: 'assets/music/music15.mp3',
-    duration: '3:17',
-  }, 
-
-];
-
-
-// Load song initially
-
-loadSong(songs[songIndex]);
-
-
-
-// Load the given song
 function loadSong(song) {
-  cover.src = song.coverPath;
-  disc.src = song.discPath;
-  title.textContent = song.title;
-  artist.textContent = song.artist;
+  cover.src = song.songCoverUrl;
+  disc.src = song.songUrl;
+  title.textContent = song.songName;
+  artist.textContent = song.songCreator;
   duration.textContent = song.duration;
 }
 
 // Toggle play and pause
 function playPauseMedia() {
-  if (disc.paused) {
+  if (disc.paused)
     disc.play();
-  } else {
+  else
     disc.pause();
-  }
 }
 
 // Update icon
 function updatePlayPauseIcon() {
-  if (disc.paused) {
-    play.classList.remove('fa-pause');
-    play.classList.add('fa-play');
-  } else {
-    play.classList.remove('fa-play');
-    play.classList.add('fa-pause');
-  }
+  if (disc.paused)
+    play.className = "fas fa-play-circle fa-2xl";
+  else
+    play.className = "fas fa-pause-circle fa-2xl";
 }
 
 // Update progress bar
 function updateProgress() {
   progress.style.width = (disc.currentTime / disc.duration) * 100 + '%';
-
   let minutes = Math.floor(disc.currentTime / 60);
   let seconds = Math.floor(disc.currentTime % 60);
-  if (seconds < 10) {
+  if (seconds < 10)
     seconds = '0' + seconds;
-  }
   timer.textContent = `${minutes}:${seconds}`;
 }
 
@@ -177,34 +152,28 @@ function resetProgress() {
 
 // Go to previous song
 function gotoPreviousSong() {
-  if (songIndex === 0) {
-    songIndex = songs.length - 1;
-  } else {
+  if (songIndex === 0)
+    songIndex = songArray[genreIndex].length - 1;
+  else
     songIndex = songIndex - 1;
-  }
-
-  const isDiscPlayingNow = !disc.paused;
-  loadSong(songs[songIndex]);
+  const isDiscPlayingNow = disc.paused;
+  loadSong(songArray[genreIndex][songIndex]);
   resetProgress();
-  if (isDiscPlayingNow) {
+  if (isDiscPlayingNow)
     playPauseMedia();
-  }
 }
 
 // Go to next song
 function gotoNextSong(playImmediately) {
-  if (songIndex === songs.length - 1) {
+  if (songIndex === songArray[genreIndex].length - 1)
     songIndex = 0;
-  } else {
+  else
     songIndex = songIndex + 1;
-  }
-
-  const isDiscPlayingNow = !disc.paused;
-  loadSong(songs[songIndex]);
+  const isDiscPlayingNow = disc.paused;
+  loadSong(songArray[genreIndex][songIndex]);
   resetProgress();
-  if (isDiscPlayingNow || playImmediately) {
+  if (isDiscPlayingNow || playImmediately)
     playPauseMedia();
-  }
 }
 
 // Change song progress when clicked on progress bar
@@ -232,3 +201,14 @@ next.addEventListener('click', gotoNextSong.bind(null, false));
 
 // Move to different place in the song
 progressContainer.addEventListener('click', setProgress);
+
+//genre event listeners
+for (var i = 0; i < genres.length; i++) {
+  genres[i].addEventListener("click", (e)=>{
+    genreIndex = (Number)(e.target.innerHTML) - 1; 
+    songIndex = 0; 
+    loadSong(songArray[genreIndex][songIndex]); 
+    updatePlayPauseIcon(); 
+    updatePlayPauseIcon();
+  });
+}

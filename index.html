@@ -14,6 +14,14 @@
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
     crossorigin="anonymous"
     />
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     />
 </head>
@@ -21,29 +29,14 @@
       <!--logo-->
           <h1>PaxPlayer<img src="logo.png" width="60" height="60"></h1>  
       <!--end of logo-->
-      
-
-   <!---->
-    <!-- <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <input type="text" placeholder="Search.. ">
-      </div> -->
-   <!----->
 
    <div class="mainContent">
-       <div class="player">
-       
-       </div>
- 
-       <!--music part-->
-       <div class="container">
-        <h1 class="heading">Music Player</h1>
-        <div class="music-container">
-          <div id="cover-box">
-            <img src="assets/images/cover1.jpg" alt="cover-image" id="cover" />
-          </div>
-          <div id="music-box">
-            <audio id="disc"></audio>
+       <div class="player"> 
+        <div class="container">
+            <audio id="disc" ></audio>
+            <div id="cover-box">
+              <img alt="cover-image" id="cover" />
+            </div>
             <div id="music-info">
               <h2 id="title"></h2>
               <h3 id="artist"></h3>
@@ -52,17 +45,32 @@
               </div>
               <div id="timer-bar">
                 <span id="timer">0:00</span>
-                <span id="duration"></span>
+                <span id="duration">0:00</span>
               </div>
             </div>
-            <div id="control-box">
-              <i id="prev" class="btn fas fa-backward"></i>
-              <i id="play" class="special-btn fas fa-play"></i>
-              <i id="next" class="btn fas fa-forward"></i>
+            <div class="controls">
+              <i class="fas fa-caret-left fa-2xl" id="prevSong"></i>
+              <i class="fas fa-play-circle fa-2xl" id="play"></i>
+              <i class="fas fa-caret-right fa-2xl" id="nextSong"></i>
+            </div>
+            <div class="genres">
+              <span>Genre: </span>
+              <ul >
+                  <li class="genreBtn">1</li>
+                  <li class="genreBtn">2</li>
+                  <li class="genreBtn">3</li>
+                  <li class="genreBtn">4</li>
+              </ul>
+              <!-- <button id="btn1">1</button>
+              <button id="btn2">2</button>
+              <button id="btn3">3</button>
+              <button id="btn4">4</button> -->
             </div>
           </div>
-        </div>
-      </div>
+       </div>
+ 
+       <!--music part-->
+       
       
     
 
