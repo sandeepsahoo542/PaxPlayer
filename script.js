@@ -110,17 +110,6 @@ const timer = document.getElementById('timer');
 const duration = document.getElementById('duration');
 const prev = document.getElementById('prevSong');
 const play = document.getElementById('play');
-const next = document.getElementById('nextSong');
-const genres = document.getElementsByClassName('genreBtn');
-const genre1btn = document.getElementById('btn1');
-const genre2btn = document.getElementById('btn2');
-const genre3btn = document.getElementById('btn3');
-const genre4btn = document.getElementById('btn4');
-var songIndex = 0;
-var genreIndex = 0;
-
-loadSong(songArray[genreIndex][songIndex]);
-
 function loadSong(song) {
   cover.src = song.songCoverUrl;
   disc.src = song.songUrl;
