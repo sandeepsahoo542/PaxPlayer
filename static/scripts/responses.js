@@ -9,40 +9,42 @@ function getBotResponse(input) {
     }
 
     // Simple responses
-    if (input == "hello") {
-        return "Hello there! Should we a small talk ";
-    } else if (input == "yes") {
-        return "Lets talk";
-    } else if(input == "Yes") {
-        return "Whats your name";
+    if (input == "Hello") {
+        return "Hello there! How can I help you? ";
+    } else if (input == "Hey") {
+        return "Hey there! How can I help you? ";
+    } else if (input == "Can we talk? I am feeling low due to this Covid-19 Pandemic.") {
+        return "Sure! Yeah exactly this is very stressful situation these days";
+    } else if(input == "Yeah actually") {
+        return "Anyways! What is your Name?";
     } else if(input == "John ") {
-        return "How was your day?";
+        return "How was your day John?";
     } else if(input == "Well it was nice") {
-        return "Are you feeling low due to this ongoing pandemic or lockdown?";
-    } else if(input == "Yes I am feeling little low") {
-        return "Would you like to listen to some music?";
-    } else if(input == "Yes") {
-       //Music ideas insertion
+        return "Would you like to listen to some Mindfreshning Music?";
+    } else if(input == "Sure") {
+       //Music ideas insertion 
         return "";
     } else if(input == "Great collection") {
-        return "What are your hobbies?";
+        return "What are your hobbies John?";
     } else if(input == "Cycling , Cooking and many more") {
-        return "Wow thats really cool";
-    } else if(input == "thank you!!") {
-        return "DO you like movies or series";
-    } else if(input == "Movies") {
-        return "What is your favourite movie during the pandemic?";
-    } else if(input == "Cars 2") {
-        return "That's really a cool movie.";
+        return "Wow! That's really cool.";
+    } else if(input == "Thank you!") {
+        return "Do you like to watch Movies or Series";
+    } else if(input == "Yup, I do like to watch Movies") {
+        return "What is your favourite movie?";
+    } else if(input == "Interstaller") {
+        return "That's really a cool Sci-fiction Movie.";
     } else if(input == "Exactly") {
         return "What profession do you pursuing these days?";
-    } else if(input == "Well, I am Student pursuing Bachlor of technology") {
+    } else if(input == "Well, I am a Student pursuing Bachlor of technology.") {
         return "How often do you miss your classroom study in this pandemic?";
     } else if(input == "I really missed it so much") {
         return "I Understand";
-    } else if (input == "goodbye") {
-        return "Talk to you later!";
-   }      else{
+    } else if (input == "Well, It was nice talking to you and I must appreciate your Song collection. It makes me feel happy.") {
+        return "Thank you so much for your valuable appreciation. The real Moto of this Webiste is to make people happy and pumped-up during this Pandemic and We are trying to do so.";
+    } else if(input == "Great!") {
+        return "Looking forward to have more chit-chat with you. Have a Good Day!";
+    }      else{
         return "Try asking something else!";
    }
 }
