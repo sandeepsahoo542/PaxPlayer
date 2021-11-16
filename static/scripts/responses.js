@@ -10,24 +10,24 @@ function getBotResponse(input) {
 
     // Simple responses
     if (input == "Hello") {
-        return "Hello there! How can I help you? ";
+        return "Hello there! How can I help you? 😃  ";
     } else if (input == "Hey") {
-        return "Hey there! How can I help you? ";
+        return "Hey there! How can I help you? 😀 ";
     } else if (input == "Can we talk? I am feeling low due to this Covid-19 Pandemic.") {
-        return "Sure! Yeah exactly this is very stressful situation these days";
+        return "Sure! Yeah exactly this is very stressful situation these days.😞";
     } else if(input == "Yeah actually") {
         return "Anyways! What is your Name?";
     } else if(input == "John ") {
-        return "How was your day John?";
+        return "How was your day John? 😃";
     } else if(input == "Well it was nice") {
-        return "Would you like to listen to some Mindfreshning Music?";
+        return "Would you like to listen to some Mindfreshning Music? 😎";
     } else if(input == "Sure") {
        //Music ideas insertion 
         return "";
     } else if(input == "Great collection") {
-        return "What are your hobbies John?";
+        return "Thanks! What are your hobbies John?";
     } else if(input == "Cycling , Cooking and many more") {
-        return "Wow! That's really cool.";
+        return "Wow! That's really cool.😃";
     } else if(input == "Thank you!") {
         return "Do you like to watch Movies or Series";
     } else if(input == "Yup, I do like to watch Movies") {
