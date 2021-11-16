@@ -13,11 +13,11 @@ function getBotResponse(input) {
         return "Hello there! How can I help you? 😃  ";
     } else if (input == "Hey") {
         return "Hey there! How can I help you? 😀 ";
-    } else if (input == "Can we talk? I am feeling low due to this Covid-19 Pandemic.") {
+    } else if (input == "Can we talk? I am feeling low due to this Covid-19 Pandemic") {
         return "Sure! Yeah exactly this is very stressful situation these days.😞";
     } else if(input == "Yeah actually") {
         return "Anyways! What is your Name?";
-    } else if(input == "John") {
+    } else if(input == "John Dsouza") {
         return "How was your day John? 😃";
     } else if(input == "Well it was nice") {
         return "Would you like to listen to some Mindfreshning Music? 😎";
