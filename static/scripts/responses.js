@@ -17,7 +17,7 @@ function getBotResponse(input) {
         return "Sure! Yeah exactly this is very stressful situation these days.😞";
     } else if(input == "Yeah actually") {
         return "Anyways! What is your Name?";
-    } else if(input == "John ") {
+    } else if(input == "John") {
         return "How was your day John? 😃";
     } else if(input == "Well it was nice") {
         return "Would you like to listen to some Mindfreshning Music? 😎";
@@ -44,7 +44,9 @@ function getBotResponse(input) {
         return "Thank you so much for your valuable appreciation. The real Moto of this Webiste is to make people happy and pumped-up during this Pandemic and We are trying to do so.";
     } else if(input == "Great!") {
         return "Looking forward to have more chit-chat with you. Have a Good Day!";
-    }      else{
+    } else if(input == "Bye") {
+        return "Bye-Bye 😃";      
+    }else{
         return "Try asking something else!";
    }
 }
