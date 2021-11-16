@@ -156,7 +156,7 @@ function gotoPreviousSong() {
     songIndex = songArray[genreIndex].length - 1;
   else
     songIndex = songIndex - 1;
-  const isDiscPlayingNow = disc.paused;
+  const isDiscPlayingNow = !disc.paused;
   loadSong(songArray[genreIndex][songIndex]);
   resetProgress();
   if (isDiscPlayingNow)
@@ -169,7 +169,7 @@ function gotoNextSong(playImmediately) {
     songIndex = 0;
   else
     songIndex = songIndex + 1;
-  const isDiscPlayingNow = disc.paused;
+  const isDiscPlayingNow = !disc.paused;
   loadSong(songArray[genreIndex][songIndex]);
   resetProgress();
   if (isDiscPlayingNow || playImmediately)
