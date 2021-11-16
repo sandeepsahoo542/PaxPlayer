@@ -40,11 +40,93 @@ const songs = [
     coverPath: 'assets/images/cover4.jpg',
     discPath: 'assets/music/music4.mp3',
     duration: '4:12',
-  }
+  },
+  {
+    title: 'Brown munde',
+    artist: 'Rishav Pal',
+    coverPath: 'assets/images/cover4.jpg',
+    discPath: 'assets/music/music5.mp3',
+    duration: '5:15',
+  },
+  {
+    title: 'Succession',
+    artist: 'Rishav Pal',
+    coverPath: 'assets/images/cover4.jpg',
+    discPath: 'assets/music/music6.mp3',
+    duration: '5:26',
+  },
+  {
+    title: 'After the rain',
+    artist: 'Big rice piano',
+    coverPath: 'assets/images/cover5.jpeg',
+    discPath: 'assets/music/music7.mp3',
+    duration: '4:15',
+  },
+  {
+    title: 'after the rice cake',
+    artist: 'John Meyer',
+    coverPath: 'assets/images/cover6.jpeg',
+    discPath: 'assets/music/music8.mp3',
+    duration: '4:07',
+  },
+  {
+    title: 'Interstellar',
+    artist: 'Hans Zimmer',
+    coverPath: 'assets/images/cover7.jpeg',
+    discPath: 'assets/music/music9.mp3',
+    duration: '5:47',
+  },
+  {
+    title: 'Fireflies',
+    artist: 'Sandeep maheswari',
+    coverPath: 'assets/images/cover8.jpeg',
+    discPath: 'assets/music/music10.mp3',
+    duration: '4:46',
+  },
+  {
+    title: 'Unravel',
+    artist: 'Linked Horizon',
+    coverPath: 'assets/images/cover9.jpeg',
+    discPath: 'assets/music/music11.mp3',
+    duration: '4:11',
+  },
+  {
+    title: 'Bella Ciao',
+    artist: 'Artev uzunov',
+    coverPath: 'assets/images/cover10.jpeg',
+    discPath: 'assets/music/music12.mp3',
+    duration: '2:03',
+  },
+  {
+    title: 'Machi no dorufin',
+    artist: 'Kingo Hamada',
+    coverPath: 'assets/images/cover4.jpg',
+    discPath: 'assets/music/music13.mp3',
+    duration: '3:25',
+  },
+  {
+    title: 'Solo',
+    artist: 'Fitgirl',
+    coverPath: 'assets/images/cover4.jpg',
+    discPath: 'assets/music/music14.mp3',
+    duration: '3:48',
+  },
+  {
+    title: 'Guren no Yumiya',
+    artist: 'Linked horizon',
+    coverPath: 'assets/images/cover4.jpg',
+    discPath: 'assets/music/music15.mp3',
+    duration: '3:17',
+  }, 
+
 ];
 
+
 // Load song initially
+
 loadSong(songs[songIndex]);
+
+
 
 // Load the given song
 function loadSong(song) {
