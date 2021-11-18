@@ -22,8 +22,7 @@ function getBotResponse(input) {
     } else if(input == "Well it was nice") {
         return "Would you like to listen to some Mindfreshning Music? 😎";
     } else if(input == "Sure") {
-       //Music ideas insertion 
-        return "";
+        return "press 1 for meditation music \n press 2 for anxiety clearing music \n press 3 for sleepy music \n press 4 for music during a walk";
     } else if(input == "Great collection") {
         return "Thanks! What are your hobbies John?";
     } else if(input == "Cycling , Cooking and many more") {
