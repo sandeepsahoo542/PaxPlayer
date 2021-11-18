@@ -19,7 +19,7 @@ function getBotResponse(input) {
         return "Anyways! What is your Name?";
     } else if(input == "John Dsouza") {
         return "How was your day John? 😃";
-    } else if(input == "Well it was nice") {
+    } else if(input == "Okay") {
         return "Would you like to listen to some Mindfreshning Music? 😎";
     } else if(input == "Sure") {
         return "press 1 for meditation music \n press 2 for anxiety clearing music \n press 3 for sleepy music \n press 4 for music during a walk";
