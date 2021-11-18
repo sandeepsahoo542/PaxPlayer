@@ -25,11 +25,11 @@ function getBotResponse(input) {
         return "press 1 for meditation music \n press 2 for anxiety clearing music \n press 3 for sleepy music \n press 4 for music during a walk";
     } else if(input == "Great collection") {
         return "Thanks! What are your hobbies John?";
-    } else if(input == "Cycling , Cooking and many more") {
+    } else if(input == "Cycling") {
         return "Wow! That's really cool.😃";
-    } else if(input == "Thank you!") {
+    } else if(input == "Thanks") {
         return "Do you like to watch Movies or Series";
-    } else if(input == "Yup, I do like to watch Movies") {
+    } else if(input == "Yes I do ") {
         return "What is your favourite movie?";
     } else if(input == "Interstaller") {
         return "That's really a cool Sci-fiction Movie.";
