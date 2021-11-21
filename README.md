@@ -1,4 +1,6 @@
 # PaxPlayer
-chatbot and music player to soothe the mind
+Chatbot and music player to soothe the mind
 
-download the zip file and extract it and open the index file to load the webpage
+To run this project on your local machine:<br />
+Download the zip file, extract it and open index.html to load the webpage.
+Alternatively, clone the repository and directly open index.html.
